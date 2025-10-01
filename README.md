@@ -4,6 +4,11 @@ Bem-vindo ao **projeto Minimal API** desenvolvido durante o Bootcamp da **Avanad
 Este projeto foi construído utilizando **.NET 8**, seguindo boas práticas de desenvolvimento de APIs minimalistas, incluindo **CRUD completo**, validações, autenticação e testes automatizados.
 
 ---
+## 📺 Apresentação
+
+https://github.com/user-attachments/assets/aed74d50-1c6c-41d5-a8b2-e2b46779a45f
+
+---
 
 ## 📌 Sobre o Projeto
 
