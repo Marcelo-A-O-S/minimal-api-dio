@@ -1,0 +1,9 @@
+.vscode
+Api/.devcontainer/
+Api/bin/
+Api/appsettings.json
+Test/bin/
+Test/appsettings.json
+Test/TestResults/
+Api/obj/
+Test/obj/
