@@ -42,17 +42,31 @@ Aqui estão as principais bibliotecas e seus propósitos:
 O projeto segue a seguinte estrutura:
 
 ```
-/Api
-├─ Extensions (Mapeamento de rotas, Configurações adicionais)
-├─ Dominios (Entidades, DTOs, Serviços, Interfaces, ModelViews, Validações)
-├─ Infraestrutura (Banco de dados, contexto)
-├─ Program.cs (Configuração da API)
-
-/Test
-├─ Dominio (Testes de serviços,  CRUD)
-├─ Infraestrutura (Contexto de testes)
-├─ Requests (Testes de endpoints)
-├─ Helpers (Configuração de Testes da API)
+├───Api -> Projeto WebApi
+│   ├───Dominios
+│   │   ├───DTOs -> Data Transfer Object
+│   │   ├───Entities -> Entidades de dados do dominio
+│   │   ├───Enums -> Pasta de enums envolvendo as entidades
+│   │   ├───Interfaces -> Contratos de serviços e funções utilitarias 
+│   │   ├───ModelViews -> Objetos de modelo para visualização
+│   │   ├───Services -> Pasta da lógica de negócios do projeto
+│   │   └───Validators -> Pasta com funções de validações de objetos
+│   ├───Extensions -> Mapeamento de rotas
+│   │   └───Configs -> Configurações adicionais
+│   ├───Infraestrutura
+│   │   └───DB -> Configuração do contexto
+│   ├───Migrations -> Migrações do banco de dados
+│   └───Properties
+└───Test -> Projeto MSTest
+    ├───Dominio -> Pasta aonde se encontra a regra de dominio
+    │   ├───Entities -> Pasta de testes de entidade
+    │   └───Services -> Pasta de testes das regras de negócios
+    │       └───Interfaces -> Pasta de constratos de regras de negócio para implementação
+    ├───Helpers -> Configuração para testes da API
+    ├───Infraestrutura -> Configuração do contexto para testes
+    ├───Mocks -> Configuração para simulação e teste da api
+    ├───Requests -> Testes de endpoints da aplicação
+         └───Interfaces -> Contratos de testes das requisições
 ```
 
 - A **camada de domínio** contém a lógica de negócio e validações.  
