@@ -47,7 +47,7 @@ Aqui estão as principais bibliotecas e seus propósitos:
 O projeto segue a seguinte estrutura:
 
 ```
-├───Api -> Projeto WebApi
+├───Api -> Projeto Web(Minimal Api)
 │   ├───Dominios
 │   │   ├───DTOs -> Data Transfer Object
 │   │   ├───Entities -> Entidades de dados do dominio
